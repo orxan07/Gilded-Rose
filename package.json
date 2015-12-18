@@ -1,0 +1,23 @@
+{
+  "name": "gilded-rose",
+  "version": "1.0.0",
+  "engines": {
+    "node": ">=0.8.0"
+  },
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "coverage":"istanbul cover _mocha -- ./test/**/*.test.js",
+    "test": "mocha -c -w --reporter spec ./test/**/*.test.js"
+  },
+  "author": "orxan@rehimli.info",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^3.4.1",
+    "mocha": "^2.3.4",
+    "chai-shallow-deep-equal": "^1.3.0"
+  }
+}
