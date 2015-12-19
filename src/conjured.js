@@ -11,8 +11,9 @@ Conjured.init = function (args) {
 };
 
 Conjured.upgrade = function () {
+    var times = 2;
     this.sellIn--;
-    for (var i = 0; i < 2; i++) {
+    while(times--) {
         this.reduceQuality();
         if (this.sellIn < 0)
             this.reduceQuality();
