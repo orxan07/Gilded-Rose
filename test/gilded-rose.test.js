@@ -15,8 +15,6 @@ describe('Testing gilded rose object', function () {
 
     describe('#update', function () {
 
-        describe('if item is ' + itemType.AGED_BRIE, function () {
-
             var agedBrie = Object.create(AgedBrie).init({sellIn: 10, quality: 30});
             var backstage = Object.create(Backstage).init({sellIn: 3, quality: 30});
             var sulfuras = Object.create(Sulfuras).init({sellIn: 0, quality: 30});
@@ -45,6 +43,5 @@ describe('Testing gilded rose object', function () {
                         assert.shallowDeepEqual(result, expected);
                     })
             }
-        });
     });
 });
